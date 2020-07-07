@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+
+<body>
+  <div id="pageWrapper">
+    <div id="topBar">
+      <div id="logo">
+        <img src="./assets/images/logo_black.jpg" alt="">
+      </div>
+      <div id="hamburger" onclick="openNav()">
+        <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+          <rect width="100" height="15" rx="8"></rect>
+          <rect y="30" width="100" height="15" rx="8"></rect>
+          <rect y="60" width="100" height="15" rx="8"></rect>
+        </svg>
+      </div>
+    </div>
+    <div id="landingPage">
+      <div id="theme">RECONSTRUC<span style="color:#e62b1e">TED</span></div>
+      <div id="date">20<sup>th</sup> JANUARY 2021 - PILANI, INDIA </div>
+    </div>
+    <div id="aboutPage" class="page">
+      <div class="pageContainer">
+        <div class="pageHeading">About the event</div>
+        <div class="pageContent">
+          <p>
+            TEDxJMI brings together a collection of doers, thinkers, innovators, explorers, visionaries, teachers,
+            learners and seeks to illuminate, inspire, change perceptions, incite action and foster new connections.
+          </p>
+          <p>
+            We are focused on proffering a TED stage to speakers of varied backgrounds and experiences for inspirational
+            and intellectual acceleration. Our event strategically allocates a window for collaboration of arts,
+            sciences,
+            entrepreneurship and women empowerment - ideas that are close to our central theme: Igniting Minds.
+          </p>
+        </div>
+        <!-- <div class="pageHeading" style="margin-top: 40px; font-size:2vw">TEDx BITS Pilani</div> -->
+        <div class="pageHeading pageHeadingLite"><span id="aboutTEDxHeading" onclick="openAboutTEDx()">About TEDx</span><span id="aboutTEDxBITSPilaniHeading" style="margin-left:20px; color:lightgray; border-bottom: 0px solid khaki; cursor:pointer;" onclick="openAboutTEDxBITSPilani()">About TEDx BITS Pilani</span></div>
+        <div class="pageContent" id="aboutTEDxContent">
+          <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. </p>
+          <p>TEDx was created in the spirit of TED's mission, "ideas worth spreading." It supports independent organizers who want to create a TED-like event in their own community. These local, self-organized events are branded TEDx, where x = independently organized TED event.
+          </p>
+          <p>At TEDx events, a screening of TED Talks videos — or a combination of live presenters and TED Talks videos — sparks deep conversation and connections at the local level. TEDx events are planned and coordinated independently, under a free license granted by TED.
+          </p>
+          <p>TEDx events are non-profit, but may use an admission fee or commercial sponsorship to cover costs. Similarly, speakers are not paid. They must also relinquish the copyrights to their materials, which TED may edit and distribute under a Creative Commons license.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="spaeakersPage" class="page" style="background: url('./assets/images/clockTower.jpg');">
+      <div class="pageContainer">
+        <div class="pageHeading">Speakers</div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Wrapper Ends -->
+
+  <nav>
+    <div id="closeButton" onclick="closeNav()">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg enable-background="new 0 0 512.001 512.001" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m284.29 256 221.86-221.86c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.86 221.86-221.86-221.86c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.86 221.86-221.86 221.86c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.86-221.86 221.86 221.86c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285l-221.86-221.86z" />
+      </svg>
+    </div>
+    <div id="navInsideWrapper">
+      <div class="navElement">Home</div>
+      <div class="navElement">About</div>
+      <div class="navElement">Speakers</div>
+      <div class="navElement">Sponsors</div>
+      <div class="navElement">Archive</div>
+      <div class="navElement">Contact</div>
+      <div class="navElement">Team</div>
+    </div>
+  </nav>
+  <div id="particles-js"></div>
+
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="./js/index.js"></script>
+
+</body>
+
+</html>
