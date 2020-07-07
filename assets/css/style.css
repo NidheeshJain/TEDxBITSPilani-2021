@@ -463,6 +463,77 @@ nav {
   cursor: pointer;
 }
 
-#designContainer, #sponsorshipContainer, #exCommsContainer{
+#curationContainer{
+  display:flex;
+}
+
+#designContainer, #sponsorshipContainer, #exCommsContainer {
   display: none;
+}
+
+#curationContainer, #designContainer, #sponsorshipContainer, #exCommsContainer {
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top:20px;
+}
+
+.teamMemberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 15vw;
+  margin:30px 30px 0 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .teamMemberCard {
+    width: 35vw;
+    margin: 20px 20px 0 0;
+  }
+}
+
+.teamMemberPhoto {
+  width: 100%;
+  height: 15vw;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .teamMemberPhoto {
+    height: 35vw;
+  }
+}
+
+.teamMemberPhoto>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.teamMemberName {
+  font-weight: 700;
+  font-size:1.3vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .teamMemberName {
+    font-size:13px;
+    line-height: 12px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.teamMemberPosition {
+  color: rgba(0, 0, 0, 0.6);
+  margin-top:-5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .teamMemberPosition {
+    font-size:9px;
+    margin-top:0px;
+  }
 }
