@@ -191,7 +191,7 @@ nav {
   font-size: 9vw;
   font-weight: 900;
   color: white;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #date {
@@ -401,9 +401,9 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
-  .footerPageContent{
-    flex-direction:column;
-    align-items:flex-start;
+  .footerPageContent {
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
   }
 }
@@ -418,25 +418,51 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
-  .socialSVGContainer{
-    margin-top:0px;
-    width:175px;
+  .socialSVGContainer {
+    margin-top: 0px;
+    width: 175px;
   }
 }
 
 .socialSVG {
   filter: invert(100%);
   width: 3vw;
-  cursor:pointer;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.socialSVG:hover{
+.socialSVG:hover {
   transform: scale(1.15);
 }
 
 @media only screen and (max-width: 500px) {
-  .socialSVG{
-    width:25px;
+  .socialSVG {
+    width: 25px;
   }
+}
+
+.teamSubCategories {
+  font-size: 1.5vw;
+  border: 0px;
+}
+
+.activeButton {
+  border-bottom: 3px solid #e62b1e;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .teamSubCategories {
+    font-size: 13px;
+  }
+}
+
+.inactiveButton {
+  color: lightgray;
+  border-bottom: 0px;
+  cursor: pointer;
+}
+
+#designContainer, #sponsorshipContainer, #exCommsContainer{
+  display: none;
 }
