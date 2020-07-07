@@ -32,14 +32,14 @@
         <div class="pageHeading">About the event</div>
         <div class="pageContent">
           <p>
-            TEDxJMI brings together a collection of doers, thinkers, innovators, explorers, visionaries, teachers,
+            TEDx BITS Pilani brings together a collection of doers, thinkers, innovators, explorers, visionaries, teachers,
             learners and seeks to illuminate, inspire, change perceptions, incite action and foster new connections.
           </p>
           <p>
             We are focused on proffering a TED stage to speakers of varied backgrounds and experiences for inspirational
             and intellectual acceleration. Our event strategically allocates a window for collaboration of arts,
             sciences,
-            entrepreneurship and women empowerment - ideas that are close to our central theme: Igniting Minds.
+            entrepreneurship and women empowerment - ideas that are close to our central theme: ReconstrucTED.
           </p>
         </div>
         <!-- <div class="pageHeading" style="margin-top: 40px; font-size:2vw">TEDx BITS Pilani</div> -->
@@ -68,8 +68,8 @@
         </div>
       </div>
     </div>
-    <div id="spaeakersPage" class="page"
-      style="background: #ffffff url('./assets/images/clockTower.jpg') no-repeat right top; background-size: cover;">
+    <div id="speakersPage" class="page"
+      style="background: #ffffff url('./assets/images/clockTower.jpg') no-repeat right top; background-size: cover; background-attachment: fixed;">
       <div class="pageContainer">
         <div class="pageHeading">Speakers</div>
         <div class="cardsGrid">
@@ -111,6 +111,27 @@
         </div>
       </div>
     </div>
+    <div id="contactPage" class="page">
+      <div class="pageContainer">
+        <div class="pageHeading">Contact Us</div>
+        <div class="pageContent contactFlexWrapper">
+          <form class="contactForm" action="" method="POST">
+            <h2>Quick Connect Form</h2>
+            <input name="name" placeholder="Name (Mandatory)" type="text" pattern="[A-Za-z ]{1,32}" required/>
+            <input name="email" placeholder="E Mail (Mandatory)" type="email" required/>
+            <input name="phone" placeholder="Phone Number (Mandatory)" type="text" pattern="[6789][0-9]{9}" required/>
+            <textarea name="message" placeholder="Enter Your Message... (Mandatory)" style="resize: none;" required></textarea>
+            <input type="submit" value="Submit" style="width: fit-content; display:block" />
+          </form>
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=bits%20pilani&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://www.whatismyip-address.com/nordvpn-coupon/"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </div>
   <!-- Page Wrapper Ends -->
@@ -125,13 +146,13 @@
       </svg>
     </div>
     <div id="navInsideWrapper">
-      <div class="navElement">Home</div>
-      <div class="navElement">About</div>
-      <div class="navElement">Speakers</div>
-      <div class="navElement">Sponsors</div>
-      <div class="navElement">Archive</div>
-      <div class="navElement">Contact</div>
-      <div class="navElement">Team</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#landingPage';">Home</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#aboutPage';">About</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#speakersPage';">Speakers</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#landingPage';">Sponsors</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#landingPage';">Archive</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#contactPage';">Contact</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='#landingPage';">Team</div>
     </div>
   </nav>
   <div id="particles-js"></div>

@@ -138,6 +138,7 @@ nav {
   height: auto;
   transition: all 0.2s ease-in-out;
   font-size: 1.5vw;
+  user-select: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -297,8 +298,8 @@ nav {
 
 @media only screen and (max-width: 500px) {
   .card {
-    height: 40vw;
-    width: 40vw;
+    height: 35vw;
+    width: 35vw;
   }
 }
 
@@ -346,4 +347,43 @@ nav {
 
 .overlay:hover, .overlay:active {
   opacity: 1;
+}
+
+.contactFlexWrapper{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height:calc(100% - 30px);
+  width:50%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .contactFlexWrapper{
+    flex-direction: column-reverse;
+  }
+
+  .mapouter{
+    margin-bottom:20px;
+    width:90%;
+    height:40vh;
+  }
+}
+
+.contactForm>*{
+  width:90%;
+  margin-top: 10px;
+  padding:3px;
 }
