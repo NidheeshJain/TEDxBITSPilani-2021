@@ -136,7 +136,7 @@ nav {
   /* border-bottom: 1px solid lightpink; */
   width: 100%;
   height: auto;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   font-size: 1.5vw;
   user-select: none;
 }
@@ -191,6 +191,7 @@ nav {
   font-size: 9vw;
   font-weight: 900;
   color: white;
+  cursor:pointer;
 }
 
 #date {
@@ -311,7 +312,7 @@ nav {
 }
 
 .overlay {
-  padding:0 5px 5px 5px;
+  padding: 0 5px 5px 5px;
   position: absolute;
   width: inherit;
   height: inherit;
@@ -323,22 +324,25 @@ nav {
   opacity: 0;
   transition: all 0.1s ease-in-out;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  user-select: none;
 }
 
 .speakerName {
   font-weight: 700;
   font-size: 1.75vw;
   margin-top: 7%;
-  text-align:center;
+  text-align: center;
 }
 
 .speakerDescription {
   font-size: 1vw;
+  text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
   .speakerName {
-    font-size:17px;
+    font-size: 17px;
   }
   .speakerDescription {
     font-size: 13px;
@@ -349,18 +353,18 @@ nav {
   opacity: 1;
 }
 
-.contactFlexWrapper{
+.contactFlexWrapper {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .mapouter {
   position: relative;
   text-align: right;
-  height:calc(100% - 30px);
-  width:50%;
+  height: calc(100% - 30px);
+  width: 50%;
 }
 
 .gmap_canvas {
@@ -371,19 +375,68 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
-  .contactFlexWrapper{
+  .contactFlexWrapper {
     flex-direction: column-reverse;
   }
-
-  .mapouter{
-    margin-bottom:20px;
-    width:90%;
-    height:40vh;
+  .mapouter {
+    margin-bottom: 20px;
+    width: 90%;
+    height: 40vh;
   }
 }
 
-.contactForm>*{
-  width:90%;
+.contactForm>* {
+  width: 90%;
   margin-top: 10px;
-  padding:3px;
+  padding: 3px;
+}
+
+.footerPageContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .footerPageContent{
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: center;
+  }
+}
+
+.socialSVGContainer {
+  width: 21vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .socialSVGContainer{
+    margin-top:0px;
+    width:175px;
+  }
+}
+
+.socialSVG {
+  filter: invert(100%);
+  width: 3vw;
+  cursor:pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialSVG:hover{
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 500px) {
+  .socialSVG{
+    width:25px;
+  }
 }
