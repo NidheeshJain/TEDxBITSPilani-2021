@@ -317,7 +317,7 @@ nav {
   width: inherit;
   height: inherit;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
@@ -491,6 +491,16 @@ nav {
   .teamMemberCard {
     width: 35vw;
     margin: 20px 20px 0 0;
+  }
+}
+
+.teamMemberCardOverlay{
+  width:15vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .teamMemberCardOverlay {
+    width:35vw;
   }
 }
 
