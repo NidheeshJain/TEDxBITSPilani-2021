@@ -36,46 +36,16 @@ function openAboutTEDx() {
     </p>`
 }
 
-function openCuration(){
-    document.getElementById('curationButton').className = "activeButton";
-    document.getElementById('designButton').className = "inactiveButton";
-    document.getElementById('sponsorshipButton').className = "inactiveButton";
-    document.getElementById('exCommsButton').className = "inactiveButton";
-    document.getElementById('curationContainer').style.display = "flex";
-    document.getElementById('designContainer').style.display = "none";
-    document.getElementById('sponsorshipContainer').style.display = "none";
-    document.getElementById('exCommsContainer').style.display = "none";
+function openTeamLeads(){
+    document.getElementById('teamLeadsButton').className = "activeButton";
+    document.getElementById('associatesButton').className = "inactiveButton";
+    document.getElementById('teamLeadsContainer').style.display = "flex";
+    document.getElementById('associatesContainer').style.display = "none";
 }
 
-function openDesign(){
-    document.getElementById('curationButton').className = "inactiveButton";
-    document.getElementById('designButton').className = "activeButton";
-    document.getElementById('sponsorshipButton').className = "inactiveButton";
-    document.getElementById('exCommsButton').className = "inactiveButton";
-    document.getElementById('curationContainer').style.display = "none";
-    document.getElementById('designContainer').style.display = "flex";
-    document.getElementById('sponsorshipContainer').style.display = "none";
-    document.getElementById('exCommsContainer').style.display = "none";
-}
-
-function openSponsorship(){
-    document.getElementById('curationButton').className = "inactiveButton";
-    document.getElementById('designButton').className = "inactiveButton";
-    document.getElementById('sponsorshipButton').className = "activeButton";
-    document.getElementById('exCommsButton').className = "inactiveButton";
-    document.getElementById('curationContainer').style.display = "none";
-    document.getElementById('designContainer').style.display = "none";
-    document.getElementById('sponsorshipContainer').style.display = "flex";
-    document.getElementById('exCommsContainer').style.display = "none";
-}
-
-function openExComms(){
-    document.getElementById('curationButton').className = "inactiveButton";
-    document.getElementById('designButton').className = "inactiveButton";
-    document.getElementById('sponsorshipButton').className = "inactiveButton";
-    document.getElementById('exCommsButton').className = "activeButton";
-    document.getElementById('curationContainer').style.display = "none";
-    document.getElementById('designContainer').style.display = "none";
-    document.getElementById('sponsorshipContainer').style.display = "none";
-    document.getElementById('exCommsContainer').style.display = "flex";
+function openAssociates(){
+    document.getElementById('teamLeadsButton').className = "inactiveButton";
+    document.getElementById('associatesButton').className = "activeButton";
+    document.getElementById('teamLeadsContainer').style.display = "none";
+    document.getElementById('associatesContainer').style.display = "flex";
 }
