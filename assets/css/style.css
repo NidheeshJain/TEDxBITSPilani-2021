@@ -290,7 +290,7 @@ nav {
 }
 
 .card {
-  background-color: pink;
+  background-color: #BBCCDE;
   height: 22vw;
   width: 22vw;
   margin: 10px;
@@ -338,6 +338,17 @@ nav {
 .speakerDescription {
   font-size: 1vw;
   text-align: center;
+}
+
+.speakerYoutubeIcon img {
+  margin: 2vw;
+  height: 7vw;
+  filter:invert(1);
+}
+
+.speakerYoutubeIcon img:hover {
+  transition: all 0.1s ease;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 500px) {
