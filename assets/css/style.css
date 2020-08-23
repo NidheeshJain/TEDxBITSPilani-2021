@@ -498,6 +498,11 @@ hr {
   margin-right: 5px;
 }
 
+.supportIcon:hover {
+  transform: scale(1);
+}
+
+
 @media only screen and (max-width: 500px) {
   .socialSVG {
     width: 25px;
