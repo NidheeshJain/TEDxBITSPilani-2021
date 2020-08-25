@@ -559,7 +559,7 @@ hr {
 }
 
 @media only screen and (max-width: 500px) {
-  .teamMemberCard, .sposnorsCard {
+  .teamMemberCard, .sponsorsCard {
     width: 35vw;
     margin: 20px 20px 0 0;
   }
@@ -581,6 +581,10 @@ hr {
   margin-bottom: 5px;
 }
 
+.sponsorsPhoto {
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
 @media only screen and (max-width: 500px) {
   .teamMemberPhoto, .sponsorsPhoto {
     height: 35vw;
@@ -597,6 +601,10 @@ hr {
 .teamMemberName, .sponsorName {
   font-weight: 700;
   font-size: 1.3vw;
+}
+
+.sponsorName {
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 500px) {
