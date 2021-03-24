@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TEDxBITSPilani</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css">
+  <style>
+    .prevQues {
+      margin: 30px 0 0;
+    }
+    #topBar {
+      background-color: black;
+    }
+
+    .card1{
+      background-color: white;
+      display: block;
+      width: 90%;
+      box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+      padding: 10px;
+      margin-top: 20px;
+    }
+    @media (min-width: 501px) {
+      .contactForm>*{
+        width: 70vw;
+      }
+      .card1{width: 70vw;}
+    }
+    #speaker{
+      padding: 3px 0;
+      color: rgba(0, 0, 0, 0.6)
+    }
+  </style>
+</head>
+
+<body>
+  <div id="pageWrapper">
+    <div id="topBar">
+      <div id="logo">
+        <img src="./assets/images/logo_black.png" alt="" onclick="window.location.href='./index.html';">
+      </div>
+      <div id="hamburger" onclick="openNav()">
+        <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+          <rect width="100" height="15" rx="8"></rect>
+          <rect y="30" width="100" height="15" rx="8"></rect>
+          <rect y="60" width="100" height="15" rx="8"></rect>
+        </svg>
+      </div>
+    </div>
+    <div id="contactPage" class="page">
+      <div class="pageContainer">
+        <div class="pageHeading">Questionnaire</div>
+        <div class="pageContent contactFlexWrapper">
+          <form class="contactForm" method="POST">
+            <h2>Ask your Questions to the Speakers</h2>
+            <input name="name" id="name" placeholder="Name (Mandatory)" type="text" pattern="[A-Za-z ]{1,32}"
+              required />
+            <!-- <input name="email" placeholder="E Mail (Mandatory)" type="email" required /> -->
+            <select name="speaker" id="speaker" type="text" pattern="[A-Za-z ]{1,32}" required>
+              <option value="",disabled selected>Name of Speaker (Mandatory)</option>
+              <option value="Rajani Thinidiath">Rajani Thinidiath</option>
+              <option value="Vandana Shah">Vandana Shah</option>
+              <option value="Minal Kavishiwar">Minal Kavishiwar</option>
+              <option value="Jennifer Alphonse">Jennifer Alphonse</option>
+              <option value="Harshit Bansal	">Harshit Bansal</option>
+              <option value="Dr. Chandrakant Lahariya">Dr. Chandrakant Lahariya</option>
+              <option value="Srikanth Velamakanni">Srikanth Velamakanni</option>
+            </select>
+            <textarea name="question" id="question" placeholder="Enter Your Question... (Mandatory)"
+              style="resize: none;" required></textarea>
+            <input type="submit" value="Submit" class="submit" style="width: fit-content; display:block" />
+          </form>
+        </div>
+        <div class="prevQues pageContent">
+          <h2 style="margin-bottom: 10px;">Your Previous Questions</h2>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="page" style="background-color: black;">
+      <div class="pageContainer">
+        <div class="footerContainer1">
+          <div>
+            <div class="pageHeading" style="color:white">Quick Links</div>
+            <div class="pageContent">
+              <ul class="quickLinksList">
+                <li><a href="./index.html" target="_blank">&bull; Home</a></li>
+                <li><a href="./index.html#aboutPage" target="_blank">&bull; About</a></li>
+                <li><a href="./index.html#speakersPage" target="_blank">&bull; Past Speakers</a></li>
+                <li><a href="./sponsors.html" target="_blank">&bull; Sponsors</a></li>
+                <li><a href="./archive.html" target="_blank">&bull; Archive</a></li>
+                <li><a href="./index.html#contactPage" target="_blank">&bull; Contact</a></li>
+                <li><a href="./team.html" target="_blank">&bull; Team</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="pageHeading" style="color:white">Stay Connected</div>
+            <div class="pageContent">
+              <div class="footerContact">
+                <div>
+                  <img src="assets/images/svg/gps.svg" class="socialSVG supportIcon" /> BITS Pilani, Pilani
+                  Campus,
+                  Vidya Vihar, Pilani, Rajasthan 333031
+                </div>
+                <div>
+                  <img src="assets/images/svg/mail2.svg" class="socialSVG supportIcon"
+                    onclick="window.location.href= `mailto:tedxbitspilani.team@gmail.com`" style="margin-right:10px" />
+                  TEDxBITSPilani.team@gmail.com
+                </div>
+              </div>
+              <div class="socialSVGContainer">
+                <img src="assets/images/svg/ig.svg" class="socialSVG"
+                  onclick="window.location.href= `https://www.instagram.com/tedxbitspilani/`" />
+                <img src="assets/images/svg/fb.svg" class="socialSVG"
+                  onclick="window.location.href= `https://www.facebook.com/tedxbitspilani`" />
+                <img src="assets/images/svg/yt.svg" class="socialSVG"
+                  onclick="window.location.href= `https://www.youtube.com/channel/UCcHCVMM3gXlVHdnrZywlWbQ`" />
+                <!-- <img src="assets/images/svg/mail.svg" class="socialSVG"
+              onclick="window.location.href= `mailto:tedxbitspilani.pr@gmail.com`" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footerContainer2">
+          <div class="footerLogo"><img src="assets/images/logo_black.png" alt=""> </div>
+          <div class="tedxLine">This independent TEDx event is operated under license from TED.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Wrapper Ends -->
+
+  <nav>
+    <div id="closeButton" onclick="closeNav()">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg enable-background="new 0 0 512.001 512.001" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m284.29 256 221.86-221.86c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.86 221.86-221.86-221.86c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.86 221.86-221.86 221.86c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.86-221.86 221.86 221.86c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285l-221.86-221.86z" />
+      </svg>
+    </div>
+    <div id="navInsideWrapper">
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html';">Home</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#aboutPage';">About</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#speakersPage';">Past Speakers
+      </div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./sponsors.html';">Sponsors</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./archive.html';">Archive</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#contactPage';">Contact</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./team.html';">Team</div>
+    </div>
+  </nav>
+  <!-- <div id="particles-js"></div> -->
+</body>
+<!-- <script src="./assets/js/particles.min.js"></script> -->
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  let prevQues= document.querySelector(".prevQues");
+
+  if (localStorage) {
+    $(document).ready(function () {
+      $(".submit").click(function (e) {
+        e.preventDefault();
+        let Speaker = $("#speaker").val();
+        let Question = $("#question").val();
+        localStorage.setItem("question", Question);
+        localStorage.setItem("speaker", Speaker);
+        const card = document.createElement("DIV");
+        const dispSpeaker = document.createElement("H4");
+        const displayQues = document.createElement("P");
+        card.classList.add("card1");
+        dispSpeaker.innerHTML = "Question for "+localStorage.getItem("speaker") +" -";
+        displayQues.innerHTML = localStorage.getItem("question");
+        card.appendChild(dispSpeaker);
+        card.appendChild(displayQues);
+        prevQues.appendChild(card);
+      });
+    });
+  } else {
+    alert("Sorry, something went wrong.");
+  }
+</script>
+
+</html>
