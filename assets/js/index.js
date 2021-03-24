@@ -36,16 +36,54 @@ function openAboutTEDx() {
     </p>`
 }
 
-function openTeamLeads(){
+function openTeamLeads() {
     document.getElementById('teamLeadsButton').className = "activeButton";
     document.getElementById('associatesButton').className = "inactiveButton";
     document.getElementById('teamLeadsContainer').style.display = "flex";
     document.getElementById('associatesContainer').style.display = "none";
 }
 
-function openAssociates(){
+function openAssociates() {
     document.getElementById('teamLeadsButton').className = "inactiveButton";
     document.getElementById('associatesButton').className = "activeButton";
     document.getElementById('teamLeadsContainer').style.display = "none";
     document.getElementById('associatesContainer').style.display = "flex";
+}
+
+document.getElementsByClassName("contactForm")[0].addEventListener("submit", function(event){
+    event.preventDefault();
+    submitQuickConnectForm();
+  });
+
+async function submitQuickConnectForm(e) {
+    try {
+        let response = await fetch('https://tedxbackend.herokuapp.com/websiteResponses', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            ///
+            body: JSON.stringify({ 
+                "name": document.querySelector(`input[name="name"]`).value,
+                "email": document.querySelector(`input[name="email"]`).value,
+                "phone": document.querySelector(`input[name="phone"]`).value,
+                "message": document.querySelector(`textarea[name="message"]`).value,
+             })
+            ///
+        });
+
+        if (response.ok) { // if HTTP-status is 200-299
+            let responseJSON = await response.json();
+            console.log(response, responseJSON);
+            alert(responseJSON.message);
+        }
+        else {
+            let responseJSON = await response.json();
+            alert(responseJSON.message);
+        }
+    }
+    catch (err) {
+        console.log(err);
+        alert("Couldn't submit the form. Please reach out to us on TEDxBITSPilani.team@gmail.com ");
+    }
 }

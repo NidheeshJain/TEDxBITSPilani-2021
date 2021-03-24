@@ -24,7 +24,7 @@
       </div>
     </div>
     <div id="landingPage">
-      <div id="theme" onclick="window.location.href='#aboutPage';">RECONSTRUCT<span style="color:#e62b1e"></span>
+      <div id="theme" onclick="window.location.href='#aboutPage';"><span style="color:#e62b1e">RE</span>CONSTRUCT
       </div>
       <div id="date">28<sup>th</sup> MARCH 2021 - PILANI, INDIA </div>
     </div>
@@ -170,14 +170,14 @@
       <div class="pageContainer">
         <div class="pageHeading">Contact Us</div>
         <div class="pageContent contactFlexWrapper">
-          <form class="contactForm" action="" method="POST">
+          <form class="contactForm">
             <h2>Quick Connect Form</h2>
             <input name="name" placeholder="Name (Mandatory)" type="text" pattern="[A-Za-z ]{1,32}" required />
             <input name="email" placeholder="E Mail (Mandatory)" type="email" required />
             <input name="phone" placeholder="Phone Number (Mandatory)" type="text" pattern="[6789][0-9]{9}" required />
             <textarea name="message" placeholder="Enter Your Message... (Mandatory)" style="resize: none;"
               required></textarea>
-            <input type="submit" value="Submit" style="width: fit-content; display:block" />
+            <input type="submit" id="quickConnectSubmit" value="Submit" style="width: fit-content; display:block" />
           </form>
           <div class="mapouter">
             <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
