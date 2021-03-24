@@ -50,10 +50,15 @@ function openAssociates() {
     document.getElementById('associatesContainer').style.display = "flex";
 }
 
-document.getElementsByClassName("contactForm")[0].addEventListener("submit", function(event){
-    event.preventDefault();
-    submitQuickConnectForm();
-  });
+try {
+    document.getElementsByClassName("contactForm")[0].addEventListener("submit", function (event) {
+        event.preventDefault();
+        submitQuickConnectForm();
+    });
+}
+catch {
+    console.log("No contactform found")
+}
 
 async function submitQuickConnectForm(e) {
     try {
@@ -63,12 +68,12 @@ async function submitQuickConnectForm(e) {
                 'Content-Type': 'application/json;charset=utf-8'
             },
             ///
-            body: JSON.stringify({ 
+            body: JSON.stringify({
                 "name": document.querySelector(`input[name="name"]`).value,
                 "email": document.querySelector(`input[name="email"]`).value,
                 "phone": document.querySelector(`input[name="phone"]`).value,
                 "message": document.querySelector(`textarea[name="message"]`).value,
-             })
+            })
             ///
         });
 
