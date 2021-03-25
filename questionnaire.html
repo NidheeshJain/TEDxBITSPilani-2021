@@ -11,11 +11,12 @@
     .prevQues {
       margin: 30px 0 0;
     }
+
     #topBar {
       background-color: black;
     }
 
-    .card1{
+    .card1 {
       background-color: white;
       display: block;
       width: 90%;
@@ -23,13 +24,18 @@
       padding: 10px;
       margin-top: 20px;
     }
+
     @media (min-width: 501px) {
-      .contactForm>*{
+      .contactForm>* {
         width: 70vw;
       }
-      .card1{width: 70vw;}
+
+      .card1 {
+        width: 70vw;
+      }
     }
-    #speaker{
+
+    #speaker {
       padding: 3px 0;
       color: rgba(0, 0, 0, 0.6)
     }
@@ -54,13 +60,13 @@
       <div class="pageContainer">
         <div class="pageHeading">Questionnaire</div>
         <div class="pageContent contactFlexWrapper">
-          <form class="contactForm" method="POST">
+          <form class="contactForm" id="questionnaireForm">
             <h2>Ask your Questions to the Speakers</h2>
             <input name="name" id="name" placeholder="Name (Mandatory)" type="text" pattern="[A-Za-z ]{1,32}"
               required />
             <!-- <input name="email" placeholder="E Mail (Mandatory)" type="email" required /> -->
             <select name="speaker" id="speaker" type="text" pattern="[A-Za-z ]{1,32}" required>
-              <option value="",disabled selected>Name of Speaker (Mandatory)</option>
+              <option value="" disabled selected hidden>Name of Speaker (Mandatory)</option>
               <option value="Rajani Thinidiath">Rajani Thinidiath</option>
               <option value="Vandana Shah">Vandana Shah</option>
               <option value="Minal Kavishiwar">Minal Kavishiwar</option>
@@ -157,34 +163,29 @@
   <!-- <div id="particles-js"></div> -->
 </body>
 <!-- <script src="./assets/js/particles.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="./assets/js/app.js"></script>
 <script src="./assets/js/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./assets/js/questionnaire.js"></script>
 <script>
-  let prevQues= document.querySelector(".prevQues");
-
-  if (localStorage) {
-    $(document).ready(function () {
-      $(".submit").click(function (e) {
-        e.preventDefault();
-        let Speaker = $("#speaker").val();
-        let Question = $("#question").val();
-        localStorage.setItem("question", Question);
-        localStorage.setItem("speaker", Speaker);
-        const card = document.createElement("DIV");
-        const dispSpeaker = document.createElement("H4");
-        const displayQues = document.createElement("P");
+  let prevQues = document.querySelector(".prevQues");
+  $(document).ready(function () {
+    array = JSON.parse(localStorage.getItem("array"));
+    prevQues.innerHTML = `<h2 style="margin-bottom: 10px;">Your Previous Questions</h2>`
+    if (array) {
+      array.forEach(element => {
+        const card = document.createElement("div");
+        const dispSpeaker = document.createElement("h4");
+        const displayQues = document.createElement("p");
         card.classList.add("card1");
-        dispSpeaker.innerHTML = "Question for "+localStorage.getItem("speaker") +" -";
-        displayQues.innerHTML = localStorage.getItem("question");
+        dispSpeaker.innerHTML = "Question for " + element.speaker + " -";
+        displayQues.innerHTML = element.question;
         card.appendChild(dispSpeaker);
         card.appendChild(displayQues);
         prevQues.appendChild(card);
       });
-    });
-  } else {
-    alert("Sorry, something went wrong.");
-  }
+    }
+  });
 </script>
 
 </html>

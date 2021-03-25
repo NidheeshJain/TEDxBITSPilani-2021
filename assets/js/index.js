@@ -51,13 +51,13 @@ function openAssociates() {
 }
 
 try {
-    document.getElementsByClassName("contactForm")[0].addEventListener("submit", function (event) {
+    document.getElementById("quickConnectForm").addEventListener("submit", function (event) {
         event.preventDefault();
         submitQuickConnectForm();
     });
 }
 catch {
-    console.log("No contactform found")
+    console.log("No quick connect form found")
 }
 
 async function submitQuickConnectForm(e) {
