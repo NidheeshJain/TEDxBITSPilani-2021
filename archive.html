@@ -2,114 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>TEDx BITS Pilani</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="./assets/css/style.css">
+  <meta charset="utf-8">
+  <title>TEDx BITS Pilani</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div id="pageWrapper">
-        <div id="topBar" style="background-color: black;">
-            <div id="logo">
-                <img src="./assets/images/logo_black.png" alt="" onclick="window.location.href='./index.html';">
-            </div>
-            <div id="hamburger" onclick="openNav()">
-                <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
-                    <rect width="100" height="15" rx="8"></rect>
-                    <rect y="30" width="100" height="15" rx="8"></rect>
-                    <rect y="60" width="100" height="15" rx="8"></rect>
-                </svg>
-            </div>
+  <div id="pageWrapper">
+    <div id="topBar" style="background-color: black;">
+      <div id="logo">
+        <img src="./assets/images/logo_black.png" alt="" onclick="window.location.href='./index.html';">
+      </div>
+      <div id="hamburger" onclick="openNav()">
+        <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+          <rect width="100" height="15" rx="8"></rect>
+          <rect y="30" width="100" height="15" rx="8"></rect>
+          <rect y="60" width="100" height="15" rx="8"></rect>
+        </svg>
+      </div>
+    </div>
+    <div id="archivePage" class="page">
+      <div class="pageContainer">
+        <div class="pageHeading">Archive '20</div>
+        <div class="pageContent" id="videoPlaylistContainer">
+          <iframe id="youtubePlaylist"
+            src="https://www.youtube.com/embed/videoseries?list=PLsRNoUx8w3rOCmpJ_Ts1CFdugsi8LKHOF" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-        <div id="archivePage" class="page">
-            <div class="pageContainer">
-                <div class="pageHeading">Archive '20</div>
-                <div class="pageContent" id="videoPlaylistContainer">
-                    <iframe id="youtubePlaylist"
-                        src="https://www.youtube.com/embed/videoseries?list=PLsRNoUx8w3rOCmpJ_Ts1CFdugsi8LKHOF"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
+      </div>
+    </div>
+    <div id="footer" class="page" style="background-color: black;">
+      <div class="pageContainer">
+        <div class="footerContainer1">
+          <div>
+            <div class="pageHeading" style="color:white">Quick Links</div>
+            <div class="pageContent">
+              <ul class="quickLinksList">
+                <li><a href="./index.html#pageWrapper">&bull; Home</a></li>
+                <li><a href="./index.html#aboutPage">&bull; About</a></li>
+                <li><a href="./index.html#speakersPage">&bull; Past Speakers</a></li>
+                <li><a href="./index.html#sponsorPage">&bull; Sponsors</a></li>
+                <li><a href="./sponsors.html">&bull; Past Sponsors</a></li>
+                <li><a href="./archive.html">&bull; Archive</a></li>
+                <li><a href="./index.html#contactPage">&bull; Contact</a></li>
+                <li><a href="./team.html">&bull; Team</a></li>
+              </ul>
             </div>
-        </div>
-        <div id="footer" class="page" style="background-color: black;">
-            <div class="pageContainer">
-              <div class="footerContainer1">
+          </div>
+          <div>
+            <div class="pageHeading" style="color:white">Stay Connected</div>
+            <div class="pageContent">
+              <div class="footerContact">
                 <div>
-                  <div class="pageHeading" style="color:white">Quick Links</div>
-                  <div class="pageContent">
-                    <ul class="quickLinksList">
-                      <li><a href="./index.html">&bull; Home</a></li>
-                      <li><a href="./index.html#aboutPage">&bull; About</a></li>
-                      <li><a href="./index.html#speakersPage">&bull; Past Speakers</a></li>
-                      <li><a href="./sponsors.html">&bull; Sponsors</a></li>
-                      <li><a href="./archive.html">&bull; Archive</a></li>
-                      <li><a href="./index.html#contactPage">&bull; Contact</a></li>
-                      <li><a href="./team.html">&bull; Team</a></li>
-                    </ul>
-                  </div>
+                  <img src="assets/images/svg/gps.svg" class="socialSVG supportIcon" /> BITS Pilani, Pilani
+                  Campus,
+                  Vidya Vihar, Pilani, Rajasthan 333031
                 </div>
                 <div>
-                  <div class="pageHeading" style="color:white">Stay Connected</div>
-                  <div class="pageContent">
-                    <div class="footerContact">
-                      <div>
-                        <img src="assets/images/svg/gps.svg" class="socialSVG supportIcon" /> BITS Pilani, Pilani
-                        Campus,
-                        Vidya Vihar, Pilani, Rajasthan 333031</div>
-                      <div>
-                        <img src="assets/images/svg/mail2.svg" class="socialSVG supportIcon"
-                          onclick="window.location.href= `mailto:tedxbitspilani.team@gmail.com`" style="margin-right:10px" />
-                        TEDxBITSPilani.team@gmail.com
-                      </div>
-                    </div>
-                    <div class="socialSVGContainer">
-                      <img src="assets/images/svg/ig.svg" class="socialSVG"
-                        onclick="window.location.href= `https://www.instagram.com/tedxbitspilani/`" />
-                      <img src="assets/images/svg/fb.svg" class="socialSVG"
-                        onclick="window.location.href= `https://www.facebook.com/tedxbitspilani`" />
-                      <img src="assets/images/svg/yt.svg" class="socialSVG"
-                        onclick="window.location.href= `https://www.youtube.com/channel/UCcHCVMM3gXlVHdnrZywlWbQ`" />
-                      <!-- <img src="assets/images/svg/mail.svg" class="socialSVG"
-                    onclick="window.location.href= `mailto:tedxbitspilani.pr@gmail.com`" /> -->
-                    </div>
-                  </div>
+                  <img src="assets/images/svg/mail2.svg" class="socialSVG supportIcon"
+                    onclick="window.location.href= `mailto:tedxbitspilani.team@gmail.com`" style="margin-right:10px" />
+                  TEDxBITSPilani.team@gmail.com
                 </div>
               </div>
-              <hr />
-              <div class="footerContainer2">
-                <div class="footerLogo"><img src="assets/images/logo_black.png" alt=""> </div>
-                <div class="tedxLine">This independent TEDx event is operated under license from TED.</div>
+              <div class="socialSVGContainer">
+                <img src="assets/images/svg/ig.svg" class="socialSVG"
+                  onclick="window.location.href= `https://www.instagram.com/tedxbitspilani/`" />
+                <img src="assets/images/svg/fb.svg" class="socialSVG"
+                  onclick="window.location.href= `https://www.facebook.com/tedxbitspilani`" />
+                <img src="assets/images/svg/yt.svg" class="socialSVG"
+                  onclick="window.location.href= `https://www.youtube.com/channel/UCcHCVMM3gXlVHdnrZywlWbQ`" />
+                <!-- <img src="assets/images/svg/mail.svg" class="socialSVG"
+                    onclick="window.location.href= `mailto:tedxbitspilani.pr@gmail.com`" /> -->
               </div>
             </div>
           </div>
+        </div>
+        <hr />
+        <div class="footerContainer2">
+          <div class="footerLogo"><img src="assets/images/logo_black.png" alt=""> </div>
+          <div class="tedxLine">This independent TEDx event is operated under license from TED.</div>
+        </div>
+      </div>
     </div>
-    </div>
-    <!-- Page Wrapper Ends -->
+  </div>
+  </div>
+  <!-- Page Wrapper Ends -->
 
-    <nav>
-        <div id="closeButton" onclick="closeNav()">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg enable-background="new 0 0 512.001 512.001" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="m284.29 256 221.86-221.86c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.86 221.86-221.86-221.86c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.86 221.86-221.86 221.86c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.86-221.86 221.86 221.86c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285l-221.86-221.86z" />
-            </svg>
-        </div>
-        <div id="navInsideWrapper">
-            <div class="navElement" onclick="closeNav(); window.location.href='./index.html#pageWrapper';">Home</div>
-            <div class="navElement" onclick="closeNav(); window.location.href='./index.html#aboutPage';">About</div>
-            <div class="navElement" onclick="closeNav(); window.location.href='./index.html#speakersPage';">Speakers
-            </div>
-            <div class="navElement" onclick="closeNav(); window.location.href='./sponsors.html';">Sponsors
-            </div>
-            <div class="navElement" onclick="closeNav(); window.location.href='./archive.html';">Archive</div>
-            <div class="navElement" onclick="closeNav(); window.location.href='./index.html#contactPage';">Contact</div>
-            <div class="navElement" onclick="closeNav(); window.location.href='./team.html';">Team</div>
-        </div>
-    </nav>
-    <script src="./assets/js/index.js"></script>
+  <nav>
+    <div id="closeButton" onclick="closeNav()">
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg enable-background="new 0 0 512.001 512.001" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m284.29 256 221.86-221.86c7.811-7.811 7.811-20.475 0-28.285s-20.475-7.811-28.285 0l-221.86 221.86-221.86-221.86c-7.811-7.811-20.475-7.811-28.285 0s-7.811 20.475 0 28.285l221.86 221.86-221.86 221.86c-7.811 7.811-7.811 20.475 0 28.285 3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857l221.86-221.86 221.86 221.86c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285l-221.86-221.86z" />
+      </svg>
+    </div>
+    <div id="navInsideWrapper">
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#pageWrapper';">Home</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#aboutPage';">About</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#speakersPage';">Speakers
+      </div>
+
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#sponsorPage';">Sponsors</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./sponsors.html';">Past Sponsors</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./archive.html';">Archive</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./index.html#contactPage';">Contact</div>
+      <div class="navElement" onclick="closeNav(); window.location.href='./team.html';">Team</div>
+    </div>
+  </nav>
+  <script src="./assets/js/index.js"></script>
 
 </body>
 
