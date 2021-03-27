@@ -534,7 +534,7 @@ hr {
   cursor: pointer;
 }
 
-#teamLeadsContainer, #sponsorsContainer {
+#teamLeadsContainer, #sponsorContainer {
   display: flex;
 }
 
@@ -542,7 +542,7 @@ hr {
   display: none;
 }
 
-#teamLeadsContainer, #associatesContainer, #sponsorsContainer {
+#teamLeadsContainer, #associatesContainer, #sponsorContainer {
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
