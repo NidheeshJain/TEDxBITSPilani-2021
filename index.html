@@ -28,6 +28,107 @@
       </div>
       <div id="date">28<sup>th</sup> MARCH 2021 - PILANI, INDIA </div>
     </div>
+    <style>
+      .salonDetails {
+        width: 80%;
+        padding: 2rem
+      }
+
+      .salonPhoto {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+      }
+
+      .salonPhoto img {
+        height: auto;
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      @media screen and (max-width: 500px) {
+        .salonCard {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .salonDetails {
+          width: 100%;
+          padding: 1.5rem;
+        }
+
+        .salonCard.right .salonPhoto {
+          order: 0;
+        }
+
+        .salonPhoto {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: calc(100vw * 0.7);
+          overflow: hidden;
+        }
+        
+        .salonPhoto img {
+          padding: 0;
+          width: 90%;
+          object-fit: cover;
+        }
+
+        .salonCard.right img{
+          width: 80%
+        }
+      }
+    </style>
+    <div class="page" style="background: #000;">
+      <div class="pageContainer">
+        <div class="pageHeading" style="color: white;">About Salons</div>
+        <div class="pageContent" style="display: flex; flex-direction: column;">
+          <div class="salonCard">
+            <div class="salonPhoto">
+              <img src="./assets/images/sponsors/Hello Intern.jpg" alt="">
+            </div>
+            <div class="salonDetails">
+              <h2>HELLOINTERN</h2>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum</div>
+            </div>
+          </div>
+          <div class="salonCard right">
+            <div class="salonPhoto">
+              <img src="./assets/images/sponsors/DU Updates.png" alt="">
+            </div>
+            <div class="salonDetails">
+              <h2>HELLOINTERN</h2>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum</div>
+            </div>
+          </div>
+          <div class="salonCard">
+            <div class="salonPhoto">
+              <img src="./assets/images/sponsors/HC Global.png" alt="">
+            </div>
+            <div class="salonDetails">
+              <h2>HELLOINTERN</h2>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="aboutPage" class="page">
       <div class="pageContainer">
         <div class="pageHeading">About the event</div>
@@ -167,11 +268,11 @@
       </div>
     </div>
     <style>
-      .sponsorName{
+      .sponsorName {
         color: white;
       }
 
-      .sponsorsPhoto{
+      .sponsorsPhoto {
         box-shadow: 0px 0px 30px -8px rgba(255, 255, 255, 0.75);
         background-color: white;
         display: flex;
@@ -179,12 +280,11 @@
         align-items: center;
       }
 
-      .sponsorsPhoto > img{
+      .sponsorsPhoto>img {
         height: auto;
         width: 100%;
-        padding:0 20px;
+        padding: 0 20px;
       }
-
     </style>
     <div id="sponsorPage" class="page" style="background-color: black;">
       <div class="pageContainer">
@@ -257,7 +357,8 @@
                 <div>
                   <img src="assets/images/svg/gps.svg" class="socialSVG supportIcon" /> BITS Pilani, Pilani
                   Campus,
-                  Vidya Vihar, Pilani, Rajasthan 333031</div>
+                  Vidya Vihar, Pilani, Rajasthan 333031
+                </div>
                 <div>
                   <img src="assets/images/svg/mail2.svg" class="socialSVG supportIcon"
                     onclick="window.location.href= `mailto:tedxbitspilani.team@gmail.com`" style="margin-right:10px" />
