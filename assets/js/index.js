@@ -92,3 +92,25 @@ async function submitQuickConnectForm(e) {
         alert("Couldn't submit the form. Please reach out to us on TEDxBITSPilani.team@gmail.com ");
     }
 }
+
+const modal = document.querySelector(".modal");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
+
+$(".salonDetails").mouseenter(function(){
+    modal.classList.add("show-modal");
+})
+// $(".salonCard").mouseleave(function(){
+//     modal.classList.remove("show-modal");
+// })
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
