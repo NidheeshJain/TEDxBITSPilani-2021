@@ -28,6 +28,197 @@
       </div>
       <div id="date">28<sup>th</sup> MARCH 2021 - PILANI, INDIA </div>
     </div>
+    <style>
+      .salonDetails {
+        padding: 1.5rem;
+        width: 80%;
+      }
+
+      .salonPhoto {
+        background-color: #121212;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 0;
+        width: 20%;
+      }
+
+      .salonPhoto img {
+        height: auto;
+        width: 100%;
+      }
+
+      .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+      }
+
+      .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 1rem 1.5rem;
+        width: 50rem;
+        border-radius: 0.5rem;
+      }
+
+      .openModal{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+        margin-left: 10px;
+      }
+
+      .close-button:hover {
+        background-color: darkgray;
+      }
+
+      .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+      }
+
+      @media screen and (max-width: 500px) {
+        .salonCard {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .salonDetails {
+          width: 100%;
+          padding: 1.5rem;
+        }
+
+        .salonCard.right .salonPhoto {
+          order: 0;
+        }
+
+        .salonPhoto {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: calc(100vw * 0.7);
+          overflow: hidden;
+        }
+
+        .salonPhoto img {
+          padding: 0;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .salonCard.right img {
+          width: 80%
+        }
+
+        .modal-content{
+          width: calc(100% - 2rem);
+          height: 50vh;
+          overflow-y: scroll;
+        }
+      }
+    </style>
+    <div class="page" style="background: #000;">
+      <div class="pageContainer">
+        <div class="pageHeading" style="color: white;">About Salons</div>
+        <div class="pageContent" style="color: white;">
+          <p>
+            Between regularly scheduled TEDx events, salon events are short weekly or monthly events that keep the TEDx
+            community involved. Each event is short and pleasant, lasting only a few hours rather than an entire day.
+            Salons, unlike bigger annual TEDx events, do not necessarily cover a broad range of topics; they can focus
+            on any topic, even a burning question. Salon attendees always watch a selection of TED Talks, and
+            occasionally a few live speakers, followed by discussions about the ideas. Salon events can also be hosted
+            on any digital platform with each virtual session having three components - a live host, talks by the
+            speakers and a small group discussion.
+          </p>
+          <p>
+            One of the most important aspects of a salon is the vibrant dialogue that allows guests to actively engage
+            in the event. Salons bring participants together in more intimate venues, giving them more opportunities to
+            get to know and discuss ideas with one another unlike a typical TEDx event.
+          </p>
+        </div>
+        <div class="pageContent salon" style="display: flex; flex-direction: column;">
+          <div class="salonCard">
+            <div class="salonPhoto">
+              <img src="./assets/images/salons/jukebox.jpg" alt="">
+            </div>
+            <div class="salonDetails">
+              <h2>Jukebox | TEDxBITSPilani</h2>
+              <div>Date: Sunday, 3rd October 2021</div>
+              <div>Time: 3:00PM IST</div>
+              <div>Venue: <a href="https://zoom.us/j/99349357318?pwd=Mk1sd3E1R3Y3NkZVK2hyVmZzM00zQT09">https://zoom.us/j/99349357318?pwd=Mk1sd3E1R3Y3NkZVK2hyVmZzM00zQT09</a></div>
+              <h4 class="openModal">Read More...</h4>
+          </div>
+          <!-- <div class="salonCard right">
+            <div class="salonPhoto">
+              <img src="./assets/images/sponsors/DU Updates.png" alt="">
+            </div>
+            <div class="salonDetails">
+              <h2>HELLOINTERN</h2>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum</div>
+            </div>
+          </div>
+          <div class="salonCard">
+            <div class="salonPhoto">
+              <img src="./assets/images/sponsors/HC Global.png" alt="">
+            </div>
+            <div class="salonDetails">
+              <h2>HELLOINTERN</h2>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum</div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <button class="trigger">Click here to trigger the modal!</button> -->
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div>Would you believe that varying specific characteristics of air particles could influence your mood?
+          It sounds like witchcraft, right? Such is the complexity of music. And yet, it's so simple. We choose
+          our likes and dislikes based on what we hear and formulate our own unique inclinations. Music is food
+          for the soul. And it has a vast cuisine- no matter the mood, we have a musical dish for it. So many
+          artists and bands throughout the sands of time have left an immortal legacy in the form of their music.
+          Be it pop, jazz, EDM, folk, rock, indie, or R&B; there's an exquisite flavor of music for everyone.
+        </div>
+        <div>TEDxBITSPilani wants to celebrate the omniscience of music and introduces Jukebox as our theme for
+          the 2021 Salon event. Jukeboxes are arguably the most iconic playback devices from the '60s loved by
+          audiophiles and newbies alike. Join us to explore the intricacies of music and the journeys of the
+          people who make them. Sing along, rejoice and tap your feet to the rhythm. Welcome to the Jukebox.</div>
+      </div>
+      </div>
+    </div>
     <div id="aboutPage" class="page">
       <div class="pageContainer">
         <div class="pageHeading">About the event</div>
@@ -167,11 +358,11 @@
       </div>
     </div>
     <style>
-      .sponsorName{
+      .sponsorName {
         color: white;
       }
 
-      .sponsorsPhoto{
+      .sponsorsPhoto {
         box-shadow: 0px 0px 30px -8px rgba(255, 255, 255, 0.75);
         background-color: white;
         display: flex;
@@ -179,12 +370,11 @@
         align-items: center;
       }
 
-      .sponsorsPhoto > img{
+      .sponsorsPhoto>img {
         height: auto;
         width: 100%;
-        padding:0 20px;
+        padding: 0 20px;
       }
-
     </style>
     <div id="sponsorPage" class="page" style="background-color: black;">
       <div class="pageContainer">
@@ -257,7 +447,8 @@
                 <div>
                   <img src="assets/images/svg/gps.svg" class="socialSVG supportIcon" /> BITS Pilani, Pilani
                   Campus,
-                  Vidya Vihar, Pilani, Rajasthan 333031</div>
+                  Vidya Vihar, Pilani, Rajasthan 333031
+                </div>
                 <div>
                   <img src="assets/images/svg/mail2.svg" class="socialSVG supportIcon"
                     onclick="window.location.href= `mailto:tedxbitspilani.team@gmail.com`" style="margin-right:10px" />
@@ -309,6 +500,7 @@
   </nav>
   <div id="particles-js"></div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/js/particles.min.js"></script>
   <script src="./assets/js/app.js"></script>
   <script src="./assets/js/index.js"></script>
