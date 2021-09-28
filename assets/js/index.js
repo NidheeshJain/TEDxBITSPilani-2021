@@ -106,7 +106,7 @@ function toggleModal() {
 //     }
 // }
 
-$(".salonDetails").mouseenter(function(){
+$(".salonDetails").click(function(){
     modal.classList.add("show-modal");
 })
 // $(".salonCard").mouseleave(function(){
