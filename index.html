@@ -49,41 +49,6 @@
         width: 100%;
       }
 
-      @media screen and (max-width: 500px) {
-        .salonCard {
-          width: 100%;
-          flex-direction: column;
-        }
-
-        .salonDetails {
-          width: 100%;
-          padding: 1.5rem;
-        }
-
-        .salonCard.right .salonPhoto {
-          order: 0;
-        }
-
-        .salonPhoto {
-          position: relative;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 100%;
-          height: calc(100vw * 0.7);
-          overflow: hidden;
-        }
-
-        .salonPhoto img {
-          padding: 0;
-          width: 90%;
-          object-fit: cover;
-        }
-
-        .salonCard.right img {
-          width: 80%
-        }
-      }
-
       .modal {
         position: fixed;
         left: 0;
@@ -128,6 +93,47 @@
         visibility: visible;
         transform: scale(1.0);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+      }
+
+      @media screen and (max-width: 500px) {
+        .salonCard {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        .salonDetails {
+          width: 100%;
+          padding: 1.5rem;
+        }
+
+        .salonCard.right .salonPhoto {
+          order: 0;
+        }
+
+        .salonPhoto {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: calc(100vw * 0.7);
+          overflow: hidden;
+        }
+
+        .salonPhoto img {
+          padding: 0;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .salonCard.right img {
+          width: 80%
+        }
+
+        .modal-content{
+          width: calc(100% - 2rem);
+          height: 50vh;
+          overflow-y: scroll;
+        }
       }
     </style>
     <div class="page" style="background: #000;">
