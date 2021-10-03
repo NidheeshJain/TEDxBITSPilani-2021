@@ -60,7 +60,7 @@ canvas {
   margin-top: 10px;
 }
 
-#logo>img {
+#logo .logoImg {
   max-height: 100%;
   max-width: 100%;
   cursor: pointer;
